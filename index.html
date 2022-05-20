@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" content="#121212" />
+        <meta name="author" content="Maverick Fabroa" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Sine and Cosine comparison" />
+        <meta property="og:url" content="https://mavyfaby.me/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Sine and Cosine Comparison | Mavyfaby" />
+        <meta property="og:description" content="Sine and Cosine comparison" />
+        <meta property="og:image" content="https://mavyfaby.me/projects/sincos/img/thumb.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="mavyfaby.me" />
+        <meta property="twitter:url" content="https://mavyfaby.me/" />
+        <meta name="twitter:title" content="Sine and Cosine Comparison | Mavyfaby" />
+        <meta name="twitter:description" content="Sine and Cosine comparison" />
+        <meta name="twitter:image" content="https://mavyfaby.me/projects/sincos/img/thumb.png" />
+        <title>Sine and Cosine Comparison | Mavyfaby</title>
+        <!-- Icon -->
+        <link rel="icon" href="img/icon.png">
+        <!-- Style -->
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+    </head>
+    <body>
+        <kbd class="sine-title title">Sine</kbd>
+        <kbd class="cosine-title title">Cosine</kbd>
+        <kbd id="radians-label"></kbd>
+        <kbd id="degrees-label"></kbd>
+        <input type="range" min="0.01" max="3.14" value="0.05" step="0.01" id="radians-slider" />
+        <kbd id="freq-label"></kbd>
+        <kbd class="combined">
+            <span class="combined-title">Combined</span>
+            <br><br>
+            <span class="combined-subtitle">Sine and Cosine</span>
+            <br><br>
+            <span class="combined-description">If we combine sine and cosine with the same angle at a moderately slow frequency, we get a perfect circle. Otherwise, it will form a beautiful shape.</span>
+        </kbd>
+        <kbd id="show-sin-cos-container">
+            Show sin and cos:
+            <input type="checkbox" id="show-sin-cos-el" checked />
+        </kbd>
+        <kbd id="author">
+            Developed by <a href="https://web.facebook.com/mavyfaby" target="_blank">Maverick Fabroa</a>
+        </kbd>
+        <!-- p5 -->
+        <script type="text/javascript" src="./lib/p5.min.js"></script>
+        <!-- Sine -->
+        <script type="text/javascript" src="./js/sine.js"></script>
+        <!-- Cosine -->
+        <script type="text/javascript" src="./js/cosine.js"></script>
+        <!-- Combined -->
+        <script type="text/javascript" src="./js/combined.js"></script>
+        <!-- Sketch -->
+        <script type="text/javascript" src="./js/sketch.js"></script>
+    </body>
+</html>
